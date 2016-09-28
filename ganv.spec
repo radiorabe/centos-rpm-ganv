@@ -36,8 +36,8 @@ mv %{buildroot}%{_exec_prefix}/lib/pkgconfig/*.pc %{buildroot}%{_libdir}/pkgconf
 %files
 %doc AUTHORS COPYING INSTALL NEWS README
 %{_bindir}/ganv_bench
-%{_includedir}/%{name}-1/ganv/*
 
 %files -n ganv-devel
 %{_exec_prefix}/lib/libganv*
+%{_includedir}/%{name}-1/ganv/*
 %{_libdir}/pkgconfig/*.pc
