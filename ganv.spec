@@ -16,6 +16,7 @@ Ganv is an interactive Gtk canvas widget for graph-based interfaces (patchers, m
 
 %package -n ganv-devel
 Summary:  Development packages for %{name}
+Requires:       %{name} = %{version}-%{release}
 
 %description -n ganv-devel
 Development packages for %{name}
