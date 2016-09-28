@@ -9,6 +9,7 @@ Source0:  http://download.drobilla.net/ganv-%{version}.tar.bz2
 
 BuildRequires: python
 BuildRequires: gtk2-devel
+BuildRequires: gtkmm24-devel
 
 %description
 Ganv is an interactive Gtk canvas widget for graph-based interfaces (patchers, modular synthesizers, finite state automata, interactive graphs, etc).
