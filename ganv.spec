@@ -7,6 +7,8 @@ License:  GPLv3+
 URL:      http://drobilla.net/software/ganv
 Source0:  http://download.drobilla.net/ganv-%{version}.tar.bz2
 
+BuildRequires: python
+
 %description
 Ganv is an interactive Gtk canvas widget for graph-based interfaces (patchers, modular synthesizers, finite state automata, interactive graphs, etc).
 
