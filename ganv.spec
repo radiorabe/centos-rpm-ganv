@@ -30,14 +30,16 @@ Development packages for %{name}
 
 %install
 ./waf --destdir=%{buildroot} --prefix=%{_prefix} install
+install -d %{buildroot}%{_libdir}/
+mv %{buildroot}%{_exec_prefix}/lib/* %{buildroot}%{_libdir}/
 install -d %{buildroot}%{_libdir}/pkgconfig/
 mv %{buildroot}%{_exec_prefix}/lib/pkgconfig/*.pc %{buildroot}%{_libdir}/pkgconfig/
 
 %files
 %doc AUTHORS COPYING INSTALL NEWS README
 %{_bindir}/ganv_bench
+%{_libdir}/libganv*
 
 %files -n ganv-devel
-%{_exec_prefix}/lib/libganv*
 %{_includedir}/%{name}-1/ganv/*
 %{_libdir}/pkgconfig/*.pc
