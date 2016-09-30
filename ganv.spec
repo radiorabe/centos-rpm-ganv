@@ -32,8 +32,6 @@ Development packages for %{name}
 ./waf --destdir=%{buildroot} --prefix=%{_prefix} install
 install -d %{buildroot}%{_libdir}/
 mv %{buildroot}%{_exec_prefix}/lib/* %{buildroot}%{_libdir}/
-install -d %{buildroot}%{_libdir}/pkgconfig/
-mv %{buildroot}%{_exec_prefix}/lib/pkgconfig/*.pc %{buildroot}%{_libdir}/pkgconfig/
 
 %files
 %doc AUTHORS COPYING INSTALL NEWS README
